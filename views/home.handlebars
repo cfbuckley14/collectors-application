@@ -1,0 +1,16 @@
+<header>
+    <h1>Marvel Characters</h1>
+</header>
+<main>
+    <section>
+        {{#each data}}
+            <div class="individualCharacter">
+                <p>{{name}}</p>
+                <p>alignment: {{alignment}}</p>
+                <p>height: {{heightCm}}cm</p>
+                <p>weight: {{weightKg}}kg</p>
+                <p>place of birth: {{placeOfBirth}}</p>
+            </div>
+        {{/each}}
+    </section>
+</main>

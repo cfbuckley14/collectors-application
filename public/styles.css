@@ -1,0 +1,99 @@
+@font-face{
+    font-family: 'marvel-regular';
+    src: url(marvel-regular.ttf);
+}
+
+body {
+    font-size: 10px;
+    color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
+    background-image: url("marvel-background-1.png");
+}
+
+h1 {
+    font-family: 'marvel-regular';
+    color: #ffffff;
+    background-color: #b13536;
+    height: 300px;
+    width: 800px;
+    border-color: #ffffff;
+    border-width: 10px;
+    border-style: double;
+    font-size: 10rem;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+main {
+    gap: 30px;
+    font-size: 1.25rem;
+}
+
+button {
+    background-color: #ffffff;
+    font-family: 'marvel-regular';
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border-color: #ffffff;
+    border-style: none;
+}
+
+button:hover {
+    background-color: #000000;
+    transition-duration: 0.4s;
+    color: #ffffff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.individualCharacter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+    border-color: #ffffff;
+    border-width: 10px;
+    border-style: double;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    background-color: #b13536;
+    opacity: 0.9;
+}
+
+.individualCharacter:hover {
+    background-color: black;
+    transition-duration: 0.3s;
+    box-shadow:
+            1px 1px #ffffff,
+            2px 2px #ffffff,
+            3px 3px #ffffff;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    opacity:1;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 6rem;
+        height: auto;
+        width: auto;
+    }
+}
