@@ -10,58 +10,6 @@ app.set('view engine', 'handlebars')
 app.set('views', './views')
 app.use(express.static('public'))
 
-const accounts = [
-    {
-        id: 1,
-        firstname: 'Jane',
-        surname: 'Doe',
-        title: 'Ms',
-        balance: 2300
-    },
-    {
-        id: 2,
-        firstname: 'John',
-        surname: 'Doe',
-        title: 'Mr',
-        balance: 300
-    },
-    {
-        id: 3,
-        firstname: 'Jose',
-        surname: 'Brewer',
-        title: 'Mr',
-        balance: 986
-    },
-    {
-        id: 4,
-        firstname: 'Jessie',
-        surname: 'Krause',
-        title: 'Mrs',
-        balance: 4378
-    },
-    {
-        id: 5,
-        firstname: 'Brayden',
-        surname: 'Schultz',
-        title: 'Mr',
-        balance: 202
-    },
-    {
-        id: 6,
-        firstname: 'Serena',
-        surname: 'Mercado',
-        title: 'Mrs',
-        balance: 400
-    },
-    {
-        id: 7,
-        firstname: 'Serena',
-        surname: 'Jones',
-        title: 'Mrs',
-        balance: 370
-    },
-]
-
 app.get('/accounts', (req, res) => {
     let filteredAccounts = accounts
     if(req.query.id) {
